@@ -3,7 +3,7 @@
 @Autor: Filiberto Vilca Apaza
 
 ## Resumen
-El presente trabajo se desarrolló con el fin de comprender y analizar las diferentes funcionalidad de tensorflow a fin de levantar un red neuronal convolucional en TensorFlow, este informe describe el dataset utilizado, las herramientas utilizadas, una descripción de los archivos generados en python, la configuración inicial de  la red neuronal(Capas, Modelo, función de activación), los requerimientos del sistema y los resultados obtenidos. El siguient trabajo esta basado en https://www.tensorflow.org/tutorials/deep_cnn/
+El presente trabajo se desarrolló con el fin de comprender y analizar las diferentes funcionalidad de tensorflow a fin de levantar un red neuronal convolucional en TensorFlow, este informe describe el dataset utilizado, las herramientas utilizadas, una descripción de los archivos generados en python, la configuración inicial de  la red neuronal(Capas, Modelo, función de activación), los requerimientos del sistema y los resultados obtenidos. El siguiente trabajo  se realizó para GPU y CPU, además esta basado en https://www.tensorflow.org/tutorials/deep_cnn/
 
 ##DataSet
 CIFAR-10,  es un problema de referencia común en el aprendizaje automático. El problema es clasificar las imágenes RGB de 32 x 32 píxeles en 10 categorías: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck.
@@ -45,17 +45,17 @@ LEARNING_RATE_DECAY_FACTOR = 0.1
 - batch_size (número de imágenes a procesar en un lote): 128
 - use_fp16 (entrenar el modelo usando fp16): False
 
-###constantes Globales Dataset:
--IMAGE_SIZE: 24 
--NUM_CLASSES: 10 
--NUM_EXAMPLES_PER_EPOCH_FOR_TRAIN: 50000 
--NUM_EXAMPLES_PER_EPOCH_FOR_EVAL: 10000 
+### Constantes Globales Dataset:
+- IMAGE_SIZE: 24 
+- NUM_CLASSES: 10 
+- NUM_EXAMPLES_PER_EPOCH_FOR_TRAIN: 50000 
+- NUM_EXAMPLES_PER_EPOCH_FOR_EVAL: 10000 
 
--Constantes que describen el proceso de entrenamiento: 
--MOVING_AVERAGE_DECAY: 0.9999 
--NUM_EPOCHS_PER_DECAY: 350.0 
--LEARNING_RATE_DECAY_FACTOR: 0.1 
--INITIAL_LEARNING_RATE: 0.1 
+### Constantes que describen el proceso de entrenamiento: 
+- MOVING_AVERAGE_DECAY: 0.9999 
+- NUM_EPOCHS_PER_DECAY: 350.0 
+- LEARNING_RATE_DECAY_FACTOR: 0.1 
+- INITIAL_LEARNING_RATE: 0.1 
 
 
 ###This CIFAR-10 model consist from the following layers:
@@ -89,8 +89,7 @@ LEARNING_RATE_DECAY_FACTOR = 0.1
 - run_once (si es *true* ejecutará una sola vez) – false
 
  ## Resultados
-- pérdida inicial  razonable 4.68, se continuo porque así aseguramos que puede lograr la precisión del entrenamiento en un 100% y en una pequeña porción de los datos de entrenamiento.
-- se obtuvo una precisión de 81%  con 10000 pasos en 30 min
+Pérdida inicial razonable 4.68, se continuo porque así aseguramos que puede lograr la precisión del entrenamiento en un 100% y en una pequeña porción de los datos de entrenamiento. Se obtuvo una precisión de 81%  con 10000 pasos en 30 min.
 
 ## Otras Notas:
 - se realizó una prueba con un millón de pasos , pero las condiciones de corte de luz no lo  permitieron
