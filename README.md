@@ -88,7 +88,7 @@ LEARNING_RATE_DECAY_FACTOR = 0.1
 - num_examples (numero de ejemplos para evaluar) – 10’000
 - run_once (si es *true* ejecutará una sola vez) – false
 
- ## Resultados
+## Resultados
 Pérdida inicial razonable 4.68, se continuo porque así aseguramos que puede lograr la precisión del entrenamiento en un 100% y en una pequeña porción de los datos de entrenamiento. Se obtuvo una precisión de 81%  con 10000 pasos en 30 min.
 
 ## Otras Notas:
